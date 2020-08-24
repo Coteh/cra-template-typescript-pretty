@@ -1,6 +1,6 @@
 {
   "name": "cra-template-typescript-pretty",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "keywords": [
     "react",
     "create-react-app",
@@ -8,21 +8,40 @@
     "typescript"
   ],
   "main": "template.json",
-  "description": "The base TypeScript template for Create React App.",
+  "description": "A CRA TypeScript template that contains ESlint, prettier, and husky.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Coteh/create-react-app.git",
-    "directory": "packages/cra-template-typescript"
+    "url": "https://github.com/Coteh/cra-template-typescript-pretty.git",
+    "directory": "packages/cra-template-typescript-pretty"
   },
   "license": "MIT",
   "engines": {
     "node": ">=10"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/Coteh/cra-template-typescript-pretty/issues"
   },
   "files": [
     "template",
     "template.json"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "scripts": {
+    "format": "prettier --config ./.prettierrc --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "pretty-quick --staged"
+    ]
+  }
 }

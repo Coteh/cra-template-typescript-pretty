@@ -25,10 +25,7 @@
       }
     },
     "lint-staged": {
-      "src/**/*.{js,ts,tsx}": [
-        "eslint",
-        "pretty-quick --staged"
-      ]
+      "src/**/*.{js,ts,tsx}": ["eslint", "pretty-quick --staged"]
     }
   }
 }
