@@ -1,4 +1,6 @@
 # cra-template-typescript-pretty
+[![npm](https://img.shields.io/npm/v/cra-template-typescript-pretty)](https://www.npmjs.com/package/cra-template-typescript-pretty)
+[![npm](https://img.shields.io/npm/dw/cra-template-typescript-pretty)](https://npmcharts.com/compare/cra-template-typescript-pretty?minimal=true)
 
 This is a TypeScript template for [Create React App](https://github.com/facebook/create-react-app) that adds [prettier](https://prettier.io/), and uses [husky](https://www.npmjs.com/package/husky) hooks to run ESLint and prettier upon every commit.
 
